@@ -4,7 +4,7 @@ const Comment = require('../schemas/comment'); // Comment 모델 -> MongoDB의 �
 
 const router = express.Router(); // Express 라우터 객체 생성
 
-// '/users' 엔드포인트에 대한 GET 요청고 POST 요청을 처리
+// '/users' 엔드포인트에 대한 GET 요청과 POST 요청을 처리
 router.route('/')
     .get(async (req, res, next) => {
         try {

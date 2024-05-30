@@ -22,7 +22,7 @@ async function getUser() {
             });
             // 로우 셀 추가 -> 각 사용자의 정보를 테이블에 추가
             let td = document.createElement('td');
-            td.testContent = user._id; // 사용자 ID를 셀에 추가
+            td.textContent = user._id; // 사용자 ID를 셀에 추가
             row.appendChild(td);
             td = document.createElement('td');
             td.textContent = user.name; // 사용자 이름을 셀에 추가
@@ -31,7 +31,7 @@ async function getUser() {
             td.textContent = user.age; // 사용자 나이를 셀에 추가
             row.appendChild(td)
             td = document.createElement('td');
-            td.testContent = user.married ? '기혼' : '미혼'; // 사용자의 결혼 상태를 셀에 추가
+            td.textContent = user.married ? '기혼' : '미혼'; // 사용자의 결혼 상태를 셀에 추가
             row.appendChild(td);
             tbody.appendChild(row); // 행을 tbody에 추가
         });
@@ -53,11 +53,11 @@ async function getComment(id) {
             const row = document.createElement('tr');
             // 댓글의 ID를 표시하는 셀을 생성하고 콘텐츠를 추가
             let td = document.createElement('td');
-            td.textConten = comment._id;
+            td.textContent = comment._id;
             row.appendChild(td);
             // 댓글 작성자의 이름을 표시하는 셀을 생성하고 콘텐츠를 추가
             td = document.createElement('td');
-            tdtextContent = comment.commenter.name;
+            td.textContent = comment.commenter.name;
             row.appendChild(td);
             // 댓글 내용을 표시하는 셀을 생성하고 콘텐츠를 추가
             td = document.createElement('td');
